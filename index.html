@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eric Duncan - Full Stack Software Engineer specializing in Python, JavaScript, React, Django, and cloud technologies. View my portfolio and projects."
+    />
+    <meta
+      name="keywords"
+      content="Eric Duncan, Full Stack Engineer, Software Developer, Python, JavaScript, React, Django, AWS, Google Cloud Platform"
+    />
+    <meta
+      property="og:title"
+      content="Eric Duncan - Full Stack Software Engineer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Eric Duncan, a Full Stack Software Engineer specializing in Python, JavaScript, React, Django, and cloud technologies."
+    />
+    <meta
+      property="og:image"
+      content="https://www.ericduncandev.com/imgs/hero-image.webp"
+    />
+    <meta property="og:url" content="https://www.ericduncandev.com" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image" href="./imgs/favicon.png" />
+    <title>Eric Duncan's Portfolio</title>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Eric Duncan",
+        "jobTitle": "Full Stack Software Engineer",
+        "url": "https://www.ericduncan.com",
+        "sameAs": [
+          "https://www.github.com/ed843",
+          "https://www.linkedin.com/in/ericduncan960"
+        ]
+      }
+    </script>
+    <link rel="canonical" href="https://www.ericduncandev.com" />
+  </head>
+  <body>
+    <main role="main">
+      <section id="hero-section" class="hero-section">
+        <picture>
+          <!-- For screens ≥1441px -->
+          <source
+            media="(min-width: 1441px)"
+            srcset="./imgs/hero-image-1920w.webp, ./imgs/hero-image.webp 2x"
+          />
+
+          <!-- For screens 1025px–1440px -->
+          <source
+            media="(min-width: 1025px)"
+            srcset="./imgs/hero-image-1440w.webp"
+          />
+
+          <!-- For screens 769px–1024px -->
+          <source
+            media="(min-width: 769px)"
+            srcset="./imgs/hero-image-1024w.webp"
+          />
+
+          <!-- For screens 481px–768px -->
+          <source
+            media="(min-width: 481px)"
+            srcset="./imgs/hero-image-768w.webp"
+            alt="test"
+          />
+
+          <!-- Fallback for smallest screens (≤480px) -->
+          <img
+            id="hero-image"
+            class="hero-image"
+            src="./imgs/hero-image-480w.webp"
+            alt="Eric Duncan, Full Stack Software Engineer"
+          />
+        </picture>
+
+        <div class="text">
+          <div id="typing-container1"></div>
+          <div id="typing-container2"></div>
+          <div class="profile-icons">
+            <a
+              href="https://www.github.com/ed843"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="icon" src="./imgs/github.svg" alt="GitHub Profile" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ericduncan960"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="icon"
+                src="./imgs/LinkedIn_icon.svg"
+                alt="LinkedIn Profile"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <header role="banner">
+        <nav
+          role="navigation"
+          aria-label="Main Navigation"
+          class="desktop-navigation"
+        >
+          <ul>
+            <li><a href="#about-skills">About Me</a></li>
+            <li><a href="#experience" aria-current="page">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="./contact">Contact Me</a></li>
+          </ul>
+        </nav>
+        <nav
+          role="navigation"
+          aria-label="Main Navigation"
+          class="mobile-navigation"
+        >
+          <ul id="nav-items">
+            <div style="background-color: grey">
+              <a href="#about-skills" onclick="toggleNavMenu()"><li>About Me</li></a>
+            </div>
+            <div style="background-color: grey">
+              <a href="#experience" onclick="toggleNavMenu()"><li>Experience</li></a>
+            </div>
+            <div style="background-color: grey">
+              <a href="#projects" onclick="toggleNavMenu()"><li>Projects</li></a>
+            </div>
+            <div style="background-color: grey">
+              <a href="./contact" onclick="toggleNavMenu()"><li>Contact Me</li></a>
+            </div>
+          </ul>
+        </nav>
+        <div id="hamburger-wrapper">
+          <img
+            src="./imgs/Hamburger_icon.svg" alt="Hamburger Icon"
+            onclick="toggleNavMenu()"
+          />
+        </div>
+      </header>
+      <section id="about-skills">
+        <section id="about-me" class="about-me">
+          <h2>About me</h2>
+          <p>
+            Hello! I'm Eric Duncan, a <strong>Full Stack Engineer</strong> with
+            a <strong>Bachelor's degree in Computer Engineering</strong> from
+            Mississippi State University.
+          </p>
+          <p>
+            I specialize in developing
+            <strong>full-stack web and mobile applications.</strong>
+          </p>
+          <p>
+            Feel free to explore my portfolio to see examples of my work, and
+            <strong>connect with me on LinkedIn or GitHub</strong> to learn more
+            about my professional journey and projects. Let's build something
+            amazing together!
+          </p>
+        </section>
+        <section id="skills">
+          <div class="skills-container">
+            <div class="skill-category">
+              <div class="skill-icons">
+                <div class="skills-row">
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/html-5-logo.svg"
+                      alt="HTML 5"
+                      title="HTML 5"
+                    />
+                    <span class="tooltiptext">HTML 5</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/css-icon.svg"
+                      alt="CSS"
+                      title="CSS"
+                    />
+                    <span class="tooltiptext">CSS</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/javascript-icon.svg"
+                      alt="JavaScript"
+                      title="JavaScript"
+                    />
+                    <span class="tooltiptext">JavaScript</span>
+                  </div>
+                </div>
+                <div class="skills-row">
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/python-icon.svg"
+                      alt="Python"
+                      title="Python"
+                    />
+                    <span class="tooltiptext">Python</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/java-icon.svg"
+                      alt="Java"
+                      title="Java"
+                    />
+                    <span class="tooltiptext">C</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/C++-icon.svg"
+                      alt="C++"
+                      title="C++"
+                    />
+                    <span class="tooltiptext">C++</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/React-icon.svg"
+                      alt="C++"
+                      title="C++"
+                    />
+                    <span class="tooltiptext">C++</span>
+                  </div>
+                </div>
+                <div class="skills-row">
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/c-sharp-icon.svg"
+                      alt="C#"
+                      title="C#"
+                    />
+                    <span class="tooltiptext">C#</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/Go-icon.svg"
+                      alt="Go"
+                      title="Go"
+                    />
+                    <span class="tooltiptext">Go</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      class="skill-icon"
+                      src="./imgs/Dart-icon.svg"
+                      alt="Dart"
+                      title="Dart"
+                    />
+                    <span class="tooltiptext">Dart</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <!-- Experience Item 1 -->
+          <div class="timeline-item" data-index="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Co-Owner / Tech Lead</h3>
+              <span>Fitness Figure | July 2024 - Current</span>
+              <ul>
+                <li>
+                  <strong>Optimized database performance</strong> by offloading
+                  calls to a separate isolate and utilizing SQL joins, reducing
+                  round trips and
+                  <strong
+                    >improving query execution speed by an average of
+                    107%</strong
+                  >
+                </li>
+                <li>
+                  <strong>Developed frontend components</strong> for a fitness
+                  tracking app using <strong>Flutter and Dart</strong>, using
+                  Provider for state management and MVC architecture
+                </li>
+                <li>
+                  Integrated <strong>OpenAI's Assistant API</strong> to enable
+                  custom app commands like timers and personalized stat-driven
+                  messages
+                </li>
+              </ul>
+              <div class="tech-stack">
+                <h4 style="color: black">Technologies:</h4>
+                <div class="tech-icons">
+                  <div class="tech-item">
+                    <img src="./imgs/flutter-icon.svg" alt="Flutter" />
+                    <span>Flutter</span>
+                  </div>
+                  <div class="tech-item">
+                    <img src="./imgs/dart-icon.svg" alt="Dart" />
+                    <span>Dart</span>
+                  </div>
+                  <div class="tech-item">
+                    <img src="./imgs/mysql-icon.svg" alt="MySQL" />
+                    <span>MySQL</span>
+                  </div>
+                  <div class="tech-item">
+                    <img src="./imgs/aws-icon.svg" alt="AWS" />
+                    <span>AWS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Experience Item 2 -->
+          <div class="timeline-item" data-index="2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Test Automation Internship</h3>
+              <span>Mississippi State University | Nov 2023 - May 2024</span>
+              <ul>
+                <li>
+                  Instructed <strong>core and advanced Java concepts</strong> as
+                  well as good programming practices such as
+                  <strong>SOLID</strong>
+                </li>
+                <li>
+                  Studied and implemented frameworks like
+                  <strong
+                    >JDBC, MyBatis, Zebrunner Carina, and Selenium
+                    WebDriver</strong
+                  >
+                  to enhance test automation and database integration skills.
+                </li>
+                <li>
+                  Completed practical assignments, oral exams, and projects to
+                  apply knowledge of <strong>Java, Docker, Git,</strong> and other topics learned
+                  in the course
+                </li>
+              </ul>
+              <div class="tech-stack">
+                <h4 style="color: black">Technologies:</h4>
+                <div class="tech-icons">
+                  <div class="tech-item">
+                    <img src="./imgs/python-icon.svg" alt="Python" />
+                    <span>Python</span>
+                  </div>
+                  <div class="tech-item">
+                    <img src="./imgs/opencv-icon.svg" alt="OpenCV" />
+                    <span>OpenCV</span>
+                  </div>
+                  <div class="tech-item">
+                    <img src="./imgs/tensorflow-icon.svg" alt="TensorFlow" />
+                    <span>TensorFlow</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Experience Item 3 -->
+          <div class="timeline-item" data-index="3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Robotics Research Assistant</h3>
+              <span>Mississippi State University | Nov 2023 - May 2024</span>
+              <ul>
+                <li>
+                  Conducted research on <strong>path-finding algorithm optimization</strong> in
+                  robotics, including <strong>RRT and A* search</strong>
+                </li>
+                <li>
+                  Produced detailed figures and maps, contributing to improved
+                  clarity and presentation of complex algorithms
+                </li>
+                <li>
+                  Led task distribution within a multidisciplinary team,
+                  achieving a <strong>100% on-time delivery rate</strong> for all project
+                  milestones over a <strong>6-month period</strong>
+                </li>
+              </ul>
+              <div class="tech-stack">
+                <h4 style="color: black">Technologies:</h4>
+                <div class="tech-icons">
+                  <div class="tech-item">
+                    <img src="./imgs/python-icon.svg" alt="Python" />
+                    <span>Python</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more timeline items as needed -->
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div
+            class="project-card"
+            style="background-image: url('./imgs/tennis-trackr.jpg'); background-position: top 90% right 30%"
+          >
+            <div class="overlay">
+              <div class="project-info-wrapper">
+                <div class="project-info">
+                  <h3>Tennis Trackr</h3>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <img src="./imgs/java-icon.svg" alt="Java logo" />
+                      <span>Java</span>
+                    </div>
+                    <div class="tech-item">
+                      <img
+                        src="./imgs/spring-boot-icon.svg"
+                        alt="Spring Boot logo"
+                      />
+                      <span>Spring Boot</span>
+                    </div>
+                    <div class="tech-item">
+                      <img
+                        src="./imgs/postgresql-icon.svg"
+                        alt="PostgreSQL logo"
+                      />
+                      <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/docker-icon.png" alt="Docker logo" />
+                      <span>Docker</span>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    A RESTful API to get information about tennis matches
+                  </p>
+                </div>
+                <div class="learn-more-container">
+                  <a
+                    href="https://github.com/ed843/TennisTrackr"
+                    class="learn-more-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Project Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            style="
+              background-image: url('./imgs/calculator-project.png');
+              background-position: top;
+            "
+          >
+            <div class="overlay">
+              <div class="project-info-wrapper">
+                <div class="project-info">
+                  <h3>Java Calculator</h3>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <img src="./imgs/java-icon.svg" alt="Java logo" />
+                      <span>Java</span>
+                    </div>
+                    <div class="tech-item">
+                      <img
+                        src="./imgs/javafx-icon.png"
+                        alt="Spring Boot logo"
+                      />
+                      <span>JavaFX</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/maven-icon.svg" alt="Maven logo" />
+                      <span>Maven</span>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    A RESTful API to get information about tennis matches
+                  </p>
+                </div>
+                <div class="learn-more-container">
+                  <a
+                    href="https://github.com/ed843/CalculatorApp"
+                    class="learn-more-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Project Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            style="
+              background-image: url('./imgs/http-server.jpg');
+              background-position: center;
+            "
+          >
+            <div class="overlay">
+              <div class="project-info-wrapper">
+                <div class="project-info">
+                  <h3>HTTP Server</h3>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <img src="./imgs/java-icon.svg" alt="Java logo" />
+                      <span>Java</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/maven-icon.svg" alt="Maven logo" />
+                      <span>Maven</span>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    A RESTful API to get information about tennis matches
+                  </p>
+                </div>
+                <div class="learn-more-container">
+                  <a
+                    href="https://github.com/ed843/HTTPServer"
+                    class="learn-more-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Project Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 1: Event Planner App -->
+          <div
+            class="project-card"
+            style="background-image: url('./imgs/event-planner-app.avif')"
+          >
+            <div class="overlay">
+              <div class="project-info-wrapper">
+                <div class="project-info">
+                  <h3>Event Planner App</h3>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <img src="./imgs/react-icon.svg" alt="React logo" />
+                      <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/django-icon.svg" alt="Django logo" />
+                      <span>Django</span>
+                    </div>
+                    <div class="tech-item">
+                      <img
+                        src="./imgs/postgresql-icon.svg"
+                        alt="PostgreSQL logo"
+                      />
+                      <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/aws-icon.svg" alt="AWS logo" />
+                      <span>AWS</span>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    A comprehensive event planner web application.
+                  </p>
+                </div>
+                <div class="learn-more-container">
+                  <a
+                    href="https://github.com/ed843/Event-Planner-App"
+                    class="learn-more-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Project Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2: Fitness Figure -->
+          <div
+            class="project-card"
+            style="
+              background-image: url('./imgs/fitness-figure.jpg');
+              background-position: right 35% top 40%;
+            "
+          >
+            <div class="overlay">
+              <div class="project-info-wrapper">
+                <div class="project-info">
+                  <h3>Fitness Figure</h3>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <img src="./imgs/dart-icon.svg" alt="Dart logo" />
+                      <span>Dart</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/flutter-icon.svg" alt="Flutter logo" />
+                      <span>Flutter</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/mysql-icon.svg" alt="MySQL logo" />
+                      <span>MySQL</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/aws-icon.svg" alt="AWS logo" />
+                      <span>AWS</span>
+                    </div>
+                  </div>
+                  <p class="desc">
+                    A mobile app to track fitness and workouts.
+                  </p>
+                </div>
+                <div class="learn-more-container">
+                  <a href="#" class="learn-more-btn">View Project Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Gestura -->
+          <div
+            class="project-card"
+            style="background-image: url('./imgs/gestura.webp')"
+          >
+            <div class="overlay">
+              <div class="project-info-wrapper">
+                <div class="project-info">
+                  <h3>Gestura</h3>
+                  <div class="tech-stack">
+                    <div class="tech-item">
+                      <img src="./imgs/python-icon.svg" alt="Python logo" />
+                      <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/opencv-icon.svg" alt="OpenCV logo" />
+                      <span>OpenCV</span>
+                    </div>
+                    <div class="tech-item">
+                      <img
+                        src="./imgs/tensorflow-icon.svg"
+                        alt="TensorFlow logo"
+                      />
+                      <span>TensorFlow</span>
+                    </div>
+                    <div class="tech-item">
+                      <img src="./imgs/gcp-icon.svg" alt="GCP logo" />
+                      <span>GCP</span>
+                    </div>
+                  </div>
+                  <p class="desc">A gesture-controlled smart home interface.</p>
+                </div>
+                <div class="learn-more-container">
+                  <a
+                    href="https://github.com/ed843/GesturaUserInterfaceFinal"
+                    class="learn-more-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View Project Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>&copy; 2025 Eric Duncan. All rights reserved.</p>
+    </footer>
+    <script src="./js/experience-timeline.js"></script>
+    <script src="./js/typing-effect.js"></script>
+    <script src="./js/navmenu.js"></script>
+    <script src="./js/tooltipmobile.js"></script>
+  </body>
+</html>

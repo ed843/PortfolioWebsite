@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thank you for contacting Eric Duncan. Your form has been successfully submitted."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Form Submitted - Eric Duncan</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="canonical" href="https://www.ericduncandev.com/form-submitted" />
+    <style>
+      .form-submitted-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 120px);
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .form-submitted-container h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .checkmark {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 2rem;
+      }
+
+      .success-message {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        margin-bottom: 2rem;
+      }
+
+      .back-button {
+        background-color: var(--secondary-color);
+        color: var(--header-text);
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .back-button:hover {
+        background-color: var(--accent-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <nav
+        role="navigation"
+        aria-label="Main Navigation"
+        class="desktop-navigation"
+      >
+        <ul>
+          <li><a href="./#about-skills">About Me</a></li>
+          <li><a href="./#experience" aria-current="page">Experience</a></li>
+          <li><a href="./#projects">Projects</a></li>
+          <li><a href="./contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <nav
+        role="navigation"
+        aria-label="Main Navigation"
+        class="mobile-navigation"
+      >
+        <ul id="nav-items">
+          <div style="background-color: grey">
+            <a href="./#about-skills" onclick="toggleNavMenu()"><li>About Me</li></a>
+          </div>
+          <div style="background-color: grey">
+            <a href="./#experience" onclick="toggleNavMenu()"><li>Experience</li></a>
+          </div>
+          <div style="background-color: grey">
+            <a href="./#projects" onclick="toggleNavMenu()"><li>Projects</li></a>
+          </div>
+          <div style="background-color: grey">
+            <a href="./contact" onclick="toggleNavMenu()"><li>Contact Me</li></a>
+          </div>
+        </ul>
+      </nav>
+      <div id="hamburger-wrapper">
+        <img
+          src="./imgs/Hamburger_icon.svg" alt="Hamburger Icon"
+          onclick="toggleNavMenu()"
+        />
+      </div>
+    </header>
+    <main class="form-submitted-container">
+      <h1 style="color: white">Thank You!</h1>
+      <img
+        class="checkmark"
+        src="./imgs/green_checkmark.svg"
+        alt="Green checkmark"
+      />
+      <p class="success-message">
+        Your form has been successfully submitted. I'll get back to you soon!
+      </p>
+      <a href="./" class="back-button">Back to Home</a>
+    </main>
+    <footer>
+      <p>&copy; 2025 Eric Duncan. All rights reserved.</p>
+    </footer>
+    <script src="./js/navmenu.js"></script>
+  </body>
+</html>
