@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="フルスタックソフトウェアエンジニアのエリック・ダンカンへのお問い合わせ。ソフトウェア開発の相談、協業のご提案、プロジェクトのディスカッションなど。"
+    />
+    <meta
+      name="keywords"
+      content="エリック・ダンカン, お問い合わせ, フルスタックエンジニア, ソフトウェア開発者, 協業, プロジェクト相談"
+    />
+    <title>エリック・ダンカンへのお問い合わせ</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="canonical" href="https://www.ericduncandev.com/contact" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "ContactPage",
+        "name": "エリック・ダンカンへのお問い合わせ",
+        "description": "フルスタックソフトウェアエンジニア、エリック・ダンカンのコンタクトページ",
+        "url": "https://www.ericduncandev.com/contact"
+      }
+    </script>
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation" aria-label="メインナビゲーション" class="desktop-navigation">
+        <ul>
+          <li><a href="../#about-skills">自己紹介</a></li>
+          <li><a href="../#experience" aria-current="page">経験</a></li>
+          <li><a href="../#projects">プロジェクト</a></li>
+          <li><a href="../contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <nav role="navigation" aria-label="メインナビゲーション" class="mobile-navigation">
+        <ul id="nav-items">
+          <div style="background-color: grey">
+            <a href="../#about-skills" onclick="toggleNavMenu()"><li>自己紹介</li></a>
+          </div>
+          <div style="background-color: grey">
+            <a href="../#experience" onclick="toggleNavMenu()"><li>経験</li></a>
+          </div>
+          <div style="background-color: grey">
+            <a href="../#projects" onclick="toggleNavMenu()"><li>プロジェクト</li></a>
+          </div>
+          <div style="background-color: grey">
+            <a href="../contact" onclick="toggleNavMenu()"><li>お問い合わせ</li></a>
+          </div>
+        </ul>
+      </nav>
+      <div id="hamburger-wrapper">
+        <img
+          src="../../assets/imgs/Hamburger_icon.svg" alt="メニューアイコン"
+          onclick="toggleNavMenu()"
+        />
+      </div>
+    </header>
+    <main class="contact-container">
+      <section class="contact-info">
+        <h2 style="color: white">お問い合わせ</h2>
+        <p>
+          ソフトウェア開発のご相談、協業のご提案、またはプロジェクトについてのディスカッションなど、
+          お気軽にご連絡ください。ご質問やご要望など、どんな内容でも歓迎いたします。
+        </p>
+        <p>
+          メールでのご連絡は
+          <a href="mailto:contact@ericduncandev.com">contact@ericduncandev.com</a>
+          までお願いします。<br />
+          また、以下の
+          <a
+            href="https://www.linkedin.com/in/ericduncan960"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a>
+          からもご連絡いただけます。<br />
+          または、下記のフォームをご利用ください。
+        </p>
+        <p>
+          ご連絡をお待ちしております。ともに革新的なソリューションを創りましょう。
+        </p>
+      </section>
+      <section class="contact-form">
+        <h2 style="color: white">お問い合わせフォーム</h2>
+        <form
+          id="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="58726a0c-897e-4c58-bf4f-3f6da1efa213"
+          />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://ericduncandev.com/form-submitted"
+          />
+          <div class="form-group">
+            <label for="first-name">名</label>
+            <input type="text" name="first-name" id="first-name" required aria-label="名" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">姓</label>
+            <input type="text" name="last-name" id="last-name" required aria-label="姓" />
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" name="email" id="email" required aria-label="メールアドレス" />
+          </div>
+          <div class="form-group">
+            <label for="comments">コメント・ご質問</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="6"
+              required
+              aria-label="コメントまたはご質問"
+            ></textarea>
+          </div>
+          <button type="submit" id="submit">送信</button>
+        </form>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>&copy; 2025 エリック・ダンカン. 全著作権所有。</p>
+    </footer>
+    <script src="../../assets/js/navmenu.js"></script>
+  </body>
+</html>

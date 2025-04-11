@@ -3,13 +3,15 @@ const typingContainers = [
       element: document.getElementById('typing-container1'),
       startTag: '<h2 class="greeting">',
       endTag: '</h2>',
-      text: 'Nice to meet you!'
+      kanaText: 'はじめまして！',
+      convertedText: '初めまして！'
     },
     {
       element: document.getElementById('typing-container2'),
       startTag: '<h2 class="name">',
       endTag: '</h2>',
-      text: 'I\'m Eric Duncan'
+      kanaText: 'だんかん・えりっくです。',
+      convertedText: 'ダンカン・エリックです。'
     }
   ];
   
@@ -19,12 +21,7 @@ const typingContainers = [
     codeElement.className = 'code-display';
     container.element.appendChild(codeElement);
     
-    // Stages of typing:
-    // 1. Type opening tag
-    // 2. Type text content
-    // 3. Type closing tag
-    // 4. Execute the code
-  
+    // Track raw code and displayed code separately
     let rawCode = "";
     let phase = "startTag"; // Tracking which phase we're in
     let index = 0;
@@ -38,25 +35,46 @@ const typingContainers = [
           index++;
           setTimeout(typeNextChar, 40);
         } else {
-          // Move to typing the text content
-          phase = "textContent";
+          // Move to typing the kana
+          phase = "kanaText";
           index = 0;
           setTimeout(typeNextChar, 100);
         }
       } 
-      else if (phase === "textContent") {
-        // Type the text content
-        if (index < container.text.length) {
-          rawCode += container.text.charAt(index);
+      else if (phase === "kanaText") {
+        // Type the kana characters
+        if (index < container.kanaText.length) {
+          rawCode += container.kanaText.charAt(index);
           updateCodeDisplay();
           index++;
           setTimeout(typeNextChar, 100);
         } else {
-          // Move to typing the closing tag
-          phase = "endTag";
-          index = 0;
-          setTimeout(typeNextChar, 100);
+          // Move to conversion phase
+          phase = "converting";
+          setTimeout(typeNextChar, 400);
         }
+      } 
+      else if (phase === "converting") {
+        // Show the conversion process - split code into parts
+        const startTagLength = container.startTag.length;
+        const beforeKana = rawCode.substring(0, startTagLength);
+        const afterKana = ""; // No closing tag yet
+        
+        // Replace kana with the converted text in the raw code
+        rawCode = beforeKana + container.convertedText + afterKana;
+        
+        // For display, we need to highlight each part separately
+        const beforeKanaHighlighted = highlightCode(beforeKana);
+        const convertedTextHighlighted = highlightCode(container.convertedText);
+        
+        // Apply conversion styling to the converted text only
+        codeElement.innerHTML = beforeKanaHighlighted + 
+                               '<span class="converting">' + convertedTextHighlighted + '</span>';
+        
+        // Move to typing the closing tag after a brief pause
+        phase = "endTag";
+        index = 0;
+        setTimeout(typeNextChar, 600);
       } 
       else if (phase === "endTag") {
         // Type the closing HTML tag
@@ -77,7 +95,7 @@ const typingContainers = [
         
         setTimeout(() => {
           // Replace the code with the actual HTML element
-          container.element.innerHTML = container.startTag + container.text + container.endTag;
+          container.element.innerHTML = container.startTag + container.convertedText + container.endTag;
           container.element.querySelector('h2').classList.add('typed');
         }, 500);
       }
@@ -112,7 +130,7 @@ const typingContainers = [
   function startTypingEffect() {
     typingContainers.forEach((container, index) => {
       // Stagger the typing of each container
-      setTimeout(() => simulateCodeTyping(container), index * 5000);
+      setTimeout(() => simulateCodeTyping(container), index * 4500);
     });
   }
   

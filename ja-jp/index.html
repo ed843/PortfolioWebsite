@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Eric Duncan - Full Stack Software Engineer specializing in Python, JavaScript, React, Django, and cloud technologies. View my portfolio and projects."
+      content="ダンカンエリック - Full Stack Software Engineer specializing in Python, JavaScript, React, Django, and cloud technologies. View my portfolio and projects."
     />
     <meta
       name="keywords"
-      content="Eric Duncan, Full Stack Engineer, Software Developer, Python, JavaScript, React, Django, AWS, Google Cloud Platform"
+      content="ダンカンエリック, Full Stack Engineer, Software Developer, Python, JavaScript, React, Django, AWS, Google Cloud Platform"
     />
     <meta
       property="og:title"
-      content="Eric Duncan - Full Stack Software Engineer Portfolio"
+      content="ダンカンエリック - Full Stack Software Engineer Portfolio"
     />
     <meta
       property="og:description"
-      content="Explore the portfolio of Eric Duncan, a Full Stack Software Engineer specializing in Python, JavaScript, React, Django, and cloud technologies."
+      content="Explore the portfolio of ダンカンエリック, a Full Stack Software Engineer specializing in Python, JavaScript, React, Django, and cloud technologies."
     />
     <meta
       property="og:image"
       content="https://www.ericduncandev.com/imgs/hero-image.webp"
     />
     <meta property="og:url" content="https://www.ericduncandev.com" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" type="image" href="./assets/imgs/favicon.png" />
-    <title>Eric Duncan's Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" type="image" href="../assets/imgs/favicon.png" />
+    <title>ダンカンエリックのポートフォリオ</title>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "Person",
-        "name": "Eric Duncan",
+        "name": "ダンカンエリック",
         "jobTitle": "Full Stack Software Engineer",
         "url": "https://www.ericduncan.com",
         "sameAs": [
@@ -49,25 +49,25 @@
           <!-- For screens ≥1441px -->
           <source
             media="(min-width: 1441px)"
-            srcset="./assets/imgs/hero-image-1920w.webp, ./assets/imgs/hero-image.webp 2x"
+            srcset="../assets/imgs/hero-image-1920w.webp, ../assets/imgs/hero-image.webp 2x"
           />
 
           <!-- For screens 1025px–1440px -->
           <source
             media="(min-width: 1025px)"
-            srcset="./assets/imgs/hero-image-1440w.webp"
+            srcset="../assets/imgs/hero-image-1440w.webp"
           />
 
           <!-- For screens 769px–1024px -->
           <source
             media="(min-width: 769px)"
-            srcset="./assets/imgs/hero-image-1024w.webp"
+            srcset="../assets/imgs/hero-image-1024w.webp"
           />
 
           <!-- For screens 481px–768px -->
           <source
             media="(min-width: 481px)"
-            srcset="./assets/imgs/hero-image-768w.webp"
+            srcset="../assets/imgs/hero-image-768w.webp"
             alt="test"
           />
 
@@ -75,8 +75,8 @@
           <img
             id="hero-image"
             class="hero-image"
-            src="./assets/imgs/hero-image-480w.webp"
-            alt="Eric Duncan, Full Stack Software Engineer"
+            src="../assets/imgs/hero-image-480w.webp"
+            alt="ダンカンエリック, Full Stack Software Engineer"
           />
         </picture>
 
@@ -89,7 +89,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img class="icon" src="./assets/imgs/github.svg" alt="GitHub Profile" />
+              <img class="icon" src="../assets/imgs/github.svg" alt="GitHub Profile" />
             </a>
             <a
               href="https://www.linkedin.com/in/ericduncan960"
@@ -98,7 +98,7 @@
             >
               <img
                 class="icon"
-                src="./assets/imgs/LinkedIn_icon.svg"
+                src="../assets/imgs/LinkedIn_icon.svg"
                 alt="LinkedIn Profile"
               />
             </a>
@@ -112,16 +112,16 @@
           class="desktop-navigation"
         >
           <ul>
-            <li><a href="#about-skills">About Me</a></li>
-            <li><a href="#experience" aria-current="page">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="./contact">Contact Me</a></li>
+            <li><a href="#about-skills">自己紹介</a></li>
+            <li><a href="#experience" aria-current="page">経験</a></li>
+            <li><a href="#projects">プロジェクト</a></li>
+            <li><a href="./contact">お問い合わせ</a></li>
           </ul>
 
           <div class="language-switcher">
             <div class="current-language" id="current-language">
               <span id="selected-language">English</span>
-              <img src="./assets/imgs/chevron-down.svg" alt="Language dropdown" class="dropdown-icon" />
+              <img src="../assets/imgs/chevron-down.svg" alt="Language dropdown" class="dropdown-icon" />
             </div>
             <ul class="language-options" id="language-options">
               <li data-lang="en" class="language-option active">English</li>
@@ -136,45 +136,37 @@
         >
           <ul id="nav-items">
             <div style="background-color: grey">
-              <a href="#about-skills" onclick="toggleNavMenu()"><li>About Me</li></a>
+              <a href="#about-skills" onclick="toggleNavMenu()"><li>自己紹介</li></a>
             </div>
             <div style="background-color: grey">
-              <a href="#experience" onclick="toggleNavMenu()"><li>Experience</li></a>
+              <a href="#experience" onclick="toggleNavMenu()"><li>経験</li></a>
             </div>
             <div style="background-color: grey">
-              <a href="#projects" onclick="toggleNavMenu()"><li>Projects</li></a>
+              <a href="#projects" onclick="toggleNavMenu()"><li>プロジェクト</li></a>
             </div>
             <div style="background-color: grey">
-              <a href="./contact" onclick="toggleNavMenu()"><li>Contact Me</li></a>
+              <a href="./contact" onclick="toggleNavMenu()"><li>お問い合わせ</li></a>
             </div>
           </ul>
-
-          
         </nav>
         <div id="hamburger-wrapper">
           <img
-            src="./assets/imgs/Hamburger_icon.svg" alt="Hamburger Icon"
+            src="../assets/imgs/Hamburger_icon.svg" alt="Hamburger Icon"
             onclick="toggleNavMenu()"
           />
         </div>
       </header>
       <section id="about-skills">
         <section id="about-me" class="about-me">
-          <h2>About me</h2>
+          <h2>自己紹介</h2>
           <p>
-            Hello! I'm Eric Duncan, a <strong>Full Stack Engineer</strong> with
-            a <strong>Bachelor's degree in Computer Engineering</strong> from
-            Mississippi State University.
+            はじめまして。ダンカン・エリックと申します。ミシシッピ州立大学でコンピューター工学を専攻し、学士号を取得しました。現在はフルスタックエンジニアとして活動しています
           </p>
           <p>
-            I specialize in developing
-            <strong>full-stack web and mobile applications.</strong>
+            Webアプリとモバイルアプリのフルスタック開発を専門としています
           </p>
           <p>
-            Feel free to explore my portfolio to see examples of my work, and
-            <strong>connect with me on LinkedIn or GitHub</strong> to learn more
-            about my professional journey and projects. Let's build something
-            amazing together!
+            ぜひポートフォリオをご覧いただき、これまでの制作例をご確認ください。経歴やプロジェクトについてもっと知りたい方は、LinkedInやGitHubでお気軽にご連絡ください。一緒に素晴らしいものを作りましょう！
           </p>
         </section>
         <section id="skills">
@@ -185,7 +177,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/html-5-logo.svg"
+                      src="../assets/imgs/html-5-logo.svg"
                       alt="HTML 5"
                       title="HTML 5"
                     />
@@ -194,7 +186,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/css-icon.svg"
+                      src="../assets/imgs/css-icon.svg"
                       alt="CSS"
                       title="CSS"
                     />
@@ -203,7 +195,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/javascript-icon.svg"
+                      src="../assets/imgs/javascript-icon.svg"
                       alt="JavaScript"
                       title="JavaScript"
                     />
@@ -214,7 +206,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/python-icon.svg"
+                      src="../assets/imgs/python-icon.svg"
                       alt="Python"
                       title="Python"
                     />
@@ -223,7 +215,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/java-icon.svg"
+                      src="../assets/imgs/java-icon.svg"
                       alt="Java"
                       title="Java"
                     />
@@ -232,7 +224,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/C++-icon.svg"
+                      src="../assets/imgs/C++-icon.svg"
                       alt="C++"
                       title="C++"
                     />
@@ -241,7 +233,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/React-icon.svg"
+                      src="../assets/imgs/React-icon.svg"
                       alt="React"
                       title="React"
                     />
@@ -252,7 +244,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/c-sharp-icon.svg"
+                      src="../assets/imgs/c-sharp-icon.svg"
                       alt="C#"
                       title="C#"
                     />
@@ -261,7 +253,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/Go-icon.svg"
+                      src="../assets/imgs/Go-icon.svg"
                       alt="Go"
                       title="Go"
                     />
@@ -270,7 +262,7 @@
                   <div class="tooltip">
                     <img
                       class="skill-icon"
-                      src="./assets/imgs/Dart-icon.svg"
+                      src="../assets/imgs/Dart-icon.svg"
                       alt="Dart"
                       title="Dart"
                     />
@@ -283,177 +275,165 @@
         </section>
       </section>
       <section id="experience" class="experience-section">
-        <h2>Experience</h2>
+        <h2>経験</h2>
         <div class="timeline">
           <!-- Experience Item 1 -->
           <div class="timeline-item" data-index="1">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Co-Owner / Tech Lead</h3>
-              <span>Fitness Figure | July 2024 - Current</span>
+              <h3>共同経営者 / フルスタックエンジニア</h3>
+              <span>Fitness Figure | 2024年7月 〜 現在</span>
               <ul>
                 <li>
-                  <strong>Optimized database performance</strong> by offloading
-                  calls to a separate isolate and utilizing SQL joins, reducing
-                  round trips and
-                  <strong
-                    >improving query execution speed by an average of
-                    107%</strong
-                  >
+                  <strong>SQL結合や分離スレッドでの処理</strong>によってデータベースのパフォーマンスを最適化し、
+                  呼び出し回数を削減。
+                  <strong>クエリ実行速度を平均107%向上</strong>させました。
                 </li>
                 <li>
-                  <strong>Developed frontend components</strong> for a fitness
-                  tracking app using <strong>Flutter and Dart</strong>, using
-                  Provider for state management and MVC architecture
+                  <strong>FlutterとDart</strong>を用いたフィットネストラッキングアプリの
+                  <strong>フロントエンドコンポーネントを開発</strong>。
+                  Providerを使用した状態管理とMVCアーキテクチャを採用。
                 </li>
                 <li>
-                  Integrated <strong>OpenAI's Assistant API</strong> to enable
-                  custom app commands like timers and personalized stat-driven
-                  messages
+                  <strong>OpenAIのAssistant API</strong>を統合し、
+                  タイマーや個別データに基づくメッセージなどのカスタムコマンドを実現。
                 </li>
               </ul>
               <div class="tech-stack">
-                <h4 style="color: black">Technologies:</h4>
+                <h4 style="color: black">使用技術:</h4>
                 <div class="tech-icons">
                   <div class="tech-item">
-                    <img src="./assets/imgs/flutter-icon.svg" alt="Flutter" />
+                    <img src="../assets/imgs/flutter-icon.svg" alt="Flutter" />
                     <span>Flutter</span>
                   </div>
                   <div class="tech-item">
-                    <img src="./assets/imgs/Dart-icon.svg" alt="Dart" />
+                    <img src="../assets/imgs/Dart-icon.svg" alt="Dart" />
                     <span>Dart</span>
                   </div>
                   <div class="tech-item">
-                    <img src="./assets/imgs/mysql-icon.svg" alt="MySQL" />
+                    <img src="../assets/imgs/mysql-icon.svg" alt="MySQL" />
                     <span>MySQL</span>
                   </div>
                   <div class="tech-item">
-                    <img src="./assets/imgs/aws-icon.svg" alt="AWS" />
+                    <img src="../assets/imgs/aws-icon.svg" alt="AWS" />
                     <span>AWS</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+      
           <!-- Experience Item 2 -->
           <div class="timeline-item" data-index="2">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Test Automation Internship</h3>
-              <span>Mississippi State University | Nov 2023 - May 2024</span>
+              <h3>テスト自動化インターン</h3>
+              <span>ミシシッピ州立大学 | 2023年11月 〜 2024年5月</span>
               <ul>
                 <li>
-                  Instructed <strong>core and advanced Java concepts</strong> as
-                  well as good programming practices such as
-                  <strong>SOLID</strong>
+                  <strong>Javaの基礎および応用概念</strong>を指導し、
+                  <strong>SOLID</strong>などの良いプログラミング慣習も紹介しました。
                 </li>
                 <li>
-                  Studied and implemented frameworks like
-                  <strong
-                    >JDBC, MyBatis, Zebrunner Carina, and Selenium
-                    WebDriver</strong
-                  >
-                  to enhance test automation and database integration skills.
+                  <strong>JDBC、MyBatis、Zebrunner Carina、Selenium WebDriver</strong>などの
+                  フレームワークを学び、テスト自動化およびデータベース連携のスキルを強化。
                 </li>
                 <li>
-                  Completed practical assignments, oral exams, and projects to
-                  apply knowledge of <strong>Java, Docker, Git,</strong> and other topics learned
-                  in the course
+                  <strong>Java、Docker、Git</strong>を活用した実践課題や口頭試験、プロジェクトを通じて
+                  学んだ知識を応用しました。
                 </li>
               </ul>
               <div class="tech-stack">
-                <h4 style="color: black">Technologies:</h4>
+                <h4 style="color: black">使用技術:</h4>
                 <div class="tech-icons">
                   <div class="tech-item">
-                    <img src="./assets/imgs/python-icon.svg" alt="Python" />
+                    <img src="../assets/imgs/python-icon.svg" alt="Python" />
                     <span>Python</span>
                   </div>
                   <div class="tech-item">
-                    <img src="./assets/imgs/opencv-icon.svg" alt="OpenCV" />
+                    <img src="../assets/imgs/opencv-icon.svg" alt="OpenCV" />
                     <span>OpenCV</span>
                   </div>
                   <div class="tech-item">
-                    <img src="./assets/imgs/tensorflow-icon.svg" alt="TensorFlow" />
+                    <img src="../assets/imgs/tensorflow-icon.svg" alt="TensorFlow" />
                     <span>TensorFlow</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+      
           <!-- Experience Item 3 -->
           <div class="timeline-item" data-index="3">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Robotics Research Assistant</h3>
-              <span>Mississippi State University | Nov 2023 - May 2024</span>
+              <h3>ロボティクス研究助手</h3>
+              <span>ミシシッピ州立大学 | 2023年11月 〜 2024年5月</span>
               <ul>
                 <li>
-                  Conducted research on <strong>path-finding algorithm optimization</strong> in
-                  robotics, including <strong>RRT and A* search</strong>
+                  <strong>RRTやA*探索などの経路探索アルゴリズムの最適化</strong>に関する研究を実施。
                 </li>
                 <li>
-                  Produced detailed figures and maps, contributing to improved
-                  clarity and presentation of complex algorithms
+                  複雑なアルゴリズムの視覚化に役立つ図やマップを作成し、
+                  プレゼン資料の明瞭さを向上。
                 </li>
                 <li>
-                  Led task distribution within a multidisciplinary team,
-                  achieving a <strong>100% on-time delivery rate</strong> for all project
-                  milestones over a <strong>6-month period</strong>
+                  多分野チーム内でのタスク分担を主導し、
+                  <strong>6ヶ月間すべてのマイルストーンを100%期限通りに達成</strong>。
                 </li>
               </ul>
               <div class="tech-stack">
-                <h4 style="color: black">Technologies:</h4>
+                <h4 style="color: black">使用技術:</h4>
                 <div class="tech-icons">
                   <div class="tech-item">
-                    <img src="./assets/imgs/python-icon.svg" alt="Python" />
+                    <img src="../assets/imgs/python-icon.svg" alt="Python" />
                     <span>Python</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Add more timeline items as needed -->
         </div>
       </section>
+      
 
       <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2>プロジェクト</h2>
         <div class="projects-grid">
           <div
             class="project-card"
-            style="background-image: url('./assets/imgs/tennis-trackr.jpg'); background-position: top 90% right 30%"
+            style="background-image: url('../assets/imgs/tennis-trackr.jpg'); background-position: top 90% right 30%"
           >
             <div class="overlay">
               <div class="project-info-wrapper">
                 <div class="project-info">
-                  <h3>Tennis Trackr</h3>
+                  <h3>テニストラッカー</h3>
                   <div class="tech-stack">
                     <div class="tech-item">
-                      <img src="./assets/imgs/java-icon.svg" alt="Java logo" />
+                      <img src="../assets/imgs/java-icon.svg" alt="Java logo" />
                       <span>Java</span>
                     </div>
                     <div class="tech-item">
                       <img
-                        src="./assets/imgs/spring-boot-icon.svg"
+                        src="../assets/imgs/spring-boot-icon.svg"
                         alt="Spring Boot logo"
                       />
                       <span>Spring Boot</span>
                     </div>
                     <div class="tech-item">
                       <img
-                        src="./assets/imgs/postgresql-icon.svg"
+                        src="../assets/imgs/postgresql-icon.svg"
                         alt="PostgreSQL logo"
                       />
                       <span>PostgreSQL</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/docker-icon.png" alt="Docker logo" />
+                      <img src="../assets/imgs/docker-icon.png" alt="Docker logo" />
                       <span>Docker</span>
                     </div>
                   </div>
                   <p class="desc">
-                    A RESTful API to get information about tennis matches
+                    テニスの試合情報を取得するためのRESTful API。
                   </p>
                 </div>
                 <div class="learn-more-container">
@@ -462,7 +442,7 @@
                     class="learn-more-btn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View Project Details</a
+                    >プロジェクトの詳細を見る</a
                   >
                 </div>
               </div>
@@ -471,7 +451,7 @@
           <div
             class="project-card"
             style="
-              background-image: url('./assets/imgs/calculator-project.png');
+              background-image: url('../assets/imgs/calculator-project.png');
               background-position: top;
             "
           >
@@ -481,23 +461,23 @@
                   <h3>Java Calculator</h3>
                   <div class="tech-stack">
                     <div class="tech-item">
-                      <img src="./assets/imgs/java-icon.svg" alt="Java logo" />
+                      <img src="../assets/imgs/java-icon.svg" alt="Java logo" />
                       <span>Java</span>
                     </div>
                     <div class="tech-item">
                       <img
-                        src="./assets/imgs/javafx-icon.png"
+                        src="../assets/imgs/javafx-icon.png"
                         alt="Spring Boot logo"
                       />
                       <span>JavaFX</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/maven-icon.svg" alt="Maven logo" />
+                      <img src="../assets/imgs/maven-icon.svg" alt="Maven logo" />
                       <span>Maven</span>
                     </div>
                   </div>
                   <p class="desc">
-                    A fully-featured calculator desktop application using the MVC model and JavaFX
+                    MVCモデルとJavaFXを使ったフル機能の電卓デスクトップアプリ
                   </p>
                 </div>
                 <div class="learn-more-container">
@@ -506,7 +486,7 @@
                     class="learn-more-btn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View Project Details</a
+                    >プロジェクトの詳細を見る</a
                   >
                 </div>
               </div>
@@ -516,7 +496,7 @@
           <div
             class="project-card"
             style="
-              background-image: url('./assets/imgs/http-server.jpg');
+              background-image: url('../assets/imgs/http-server.jpg');
               background-position: center;
             "
           >
@@ -526,16 +506,16 @@
                   <h3>HTTP Server</h3>
                   <div class="tech-stack">
                     <div class="tech-item">
-                      <img src="./assets/imgs/java-icon.svg" alt="Java logo" />
+                      <img src="../assets/imgs/java-icon.svg" alt="Java logo" />
                       <span>Java</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/maven-icon.svg" alt="Maven logo" />
+                      <img src="../assets/imgs/maven-icon.svg" alt="Maven logo" />
                       <span>Maven</span>
                     </div>
                   </div>
                   <p class="desc">
-                    A simple HTTP server that parses requests and sends responses back to the client
+                    シンプルなHTTPサーバーで、リクエストを解析してクライアントにレスポンスを返します。
                   </p>
                 </div>
                 <div class="learn-more-container">
@@ -544,7 +524,7 @@
                     class="learn-more-btn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View Project Details</a
+                    >プロジェクトの詳細を見る</a
                   >
                 </div>
               </div>
@@ -554,7 +534,7 @@
           <!-- Project Card 1: Event Planner App -->
           <div
             class="project-card"
-            style="background-image: url('./assets/imgs/event-planner-app.avif')"
+            style="background-image: url('../assets/imgs/event-planner-app.avif')"
           >
             <div class="overlay">
               <div class="project-info-wrapper">
@@ -562,27 +542,27 @@
                   <h3>Event Planner App</h3>
                   <div class="tech-stack">
                     <div class="tech-item">
-                      <img src="./assets/imgs/React-icon.svg" alt="React logo" />
+                      <img src="../assets/imgs/React-icon.svg" alt="React logo" />
                       <span>React</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/django-icon.svg" alt="Django logo" />
+                      <img src="../assets/imgs/django-icon.svg" alt="Django logo" />
                       <span>Django</span>
                     </div>
                     <div class="tech-item">
                       <img
-                        src="./assets/imgs/postgresql-icon.svg"
+                        src="../assets/imgs/postgresql-icon.svg"
                         alt="PostgreSQL logo"
                       />
                       <span>PostgreSQL</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/aws-icon.svg" alt="AWS logo" />
+                      <img src="../assets/imgs/aws-icon.svg" alt="AWS logo" />
                       <span>AWS</span>
                     </div>
                   </div>
                   <p class="desc">
-                    A comprehensive event planner web application.
+                    イベントを総合的に管理できるウェブアプリケーションです。
                   </p>
                 </div>
                 <div class="learn-more-container">
@@ -591,7 +571,7 @@
                     class="learn-more-btn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View Project Details</a
+                    >プロジェクトの詳細を見る</a
                   >
                 </div>
               </div>
@@ -601,7 +581,7 @@
           <div
             class="project-card"
             style="
-              background-image: url('./assets/imgs/fitness-figure.jpg');
+              background-image: url('../assets/imgs/fitness-figure.jpg');
               background-position: right 35% top 40%;
             "
           >
@@ -611,28 +591,28 @@
                   <h3>Fitness Figure</h3>
                   <div class="tech-stack">
                     <div class="tech-item">
-                      <img src="./assets/imgs/Dart-icon.svg" alt="Dart logo" />
+                      <img src="../assets/imgs/Dart-icon.svg" alt="Dart logo" />
                       <span>Dart</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/flutter-icon.svg" alt="Flutter logo" />
+                      <img src="../assets/imgs/flutter-icon.svg" alt="Flutter logo" />
                       <span>Flutter</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/mysql-icon.svg" alt="MySQL logo" />
+                      <img src="../assets/imgs/mysql-icon.svg" alt="MySQL logo" />
                       <span>MySQL</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/aws-icon.svg" alt="AWS logo" />
+                      <img src="../assets/imgs/aws-icon.svg" alt="AWS logo" />
                       <span>AWS</span>
                     </div>
                   </div>
                   <p class="desc">
-                    A mobile app to track fitness and workouts.
+                    フィットネスやワークアウトを記録できるゲーミフィケーション型のモバイルアプリです。
                   </p>
                 </div>
                 <div class="learn-more-container">
-                  <a href="#" class="learn-more-btn">View Project Details</a>
+                  <a href="#" class="learn-more-btn">プロジェクトの詳細を見る</a>
                 </div>
               </div>
             </div>
@@ -641,7 +621,7 @@
           <!-- Project Card 3: Gestura -->
           <div
             class="project-card"
-            style="background-image: url('./assets/imgs/gestura.webp')"
+            style="background-image: url('../assets/imgs/gestura.webp')"
           >
             <div class="overlay">
               <div class="project-info-wrapper">
@@ -649,26 +629,26 @@
                   <h3>Gestura</h3>
                   <div class="tech-stack">
                     <div class="tech-item">
-                      <img src="./assets/imgs/python-icon.svg" alt="Python logo" />
+                      <img src="../assets/imgs/python-icon.svg" alt="Python logo" />
                       <span>Python</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/opencv-icon.svg" alt="OpenCV logo" />
+                      <img src="../assets/imgs/opencv-icon.svg" alt="OpenCV logo" />
                       <span>OpenCV</span>
                     </div>
                     <div class="tech-item">
                       <img
-                        src="./assets/imgs/tensorflow-icon.svg"
+                        src="../assets/imgs/tensorflow-icon.svg"
                         alt="TensorFlow logo"
                       />
                       <span>TensorFlow</span>
                     </div>
                     <div class="tech-item">
-                      <img src="./assets/imgs/gcp-icon.svg" alt="GCP logo" />
+                      <img src="../assets/imgs/gcp-icon.svg" alt="GCP logo" />
                       <span>GCP</span>
                     </div>
                   </div>
-                  <p class="desc">A gesture-controlled smart home interface.</p>
+                  <p class="desc">ジェスチャーで操作できるスマートホームインターフェースです。</p>
                 </div>
                 <div class="learn-more-container">
                   <a
@@ -676,7 +656,7 @@
                     class="learn-more-btn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View Project Details</a
+                    >プロジェクトの詳細を見る</a
                   >
                 </div>
               </div>
@@ -686,12 +666,12 @@
       </section>
     </main>
     <footer role="contentinfo">
-      <p>&copy; 2025 Eric Duncan. All rights reserved.</p>
+      <p>&copy; 2025 ダンカンエリック. All rights reserved.</p>
     </footer>
-    <script src="./assets/js/experience-timeline.js"></script>
-    <script src="./assets/js/typing-effect.js"></script>
-    <script src="./assets/js/navmenu.js"></script>
-    <script src="./assets/js/tooltipmobile.js"></script>
-    <script src="./assets/js/language-switcher.js"></script>
+    <script src="../assets/js/experience-timeline.js"></script>
+    <script src="../assets/js/typing-effect-jp.js"></script>
+    <script src="../assets/js/navmenu.js"></script>
+    <script src="../assets/js/tooltipmobile.js"></script>
+    <script src="../assets/js/language-switcher.js"></script>
   </body>
 </html>
