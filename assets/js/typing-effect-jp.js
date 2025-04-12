@@ -103,7 +103,12 @@ const typingContainers = [
     
     function updateCodeDisplay() {
       // Apply syntax highlighting to the raw code
-      codeElement.innerHTML = highlightCode(rawCode);
+      let highlighted = highlightCode(rawCode);
+      // Add cursor at the end of the text
+      codeElement.innerHTML = highlighted;
+      
+      // Make sure we scroll to the bottom if content overflows
+      codeElement.scrollTop = codeElement.scrollHeight;
     }
     
     function highlightCode(code) {
@@ -113,15 +118,15 @@ const typingContainers = [
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;');
       
-      // Now apply syntax highlighting
+      // Now apply syntax highlighting (I'm never doing regex again)
       return escapedCode
-        // Highlight HTML tags (including the brackets)
         .replace(/(&lt;)([\/\w]+)(\s|&gt;)/g, '<span class="tag">&lt;$2</span>$3')
         .replace(/(&gt;)/g, '<span class="tag">&gt;</span>')
-        // Highlight attributes
-        .replace(/(\s)([a-zA-Z\-]+)(=)(&quot;)([^&quot;]*)(&quot;)/g, 
+        .replace(/(\s)([a-zA-Z\-]+)(=)(&quot;)((?:(?!&quot;).)*)(&quot;)/g, 
                  '$1<span class="attribute">$2</span>$3<span class="string">$4$5$6</span>');
     }
+
+    codeElement.classList.add('typing-cursor');
     
     // Start the typing process
     typeNextChar();
